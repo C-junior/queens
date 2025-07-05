@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5nlwee5o6x00"]
+
+[ext_resource type="Script" uid="uid://dd6i1qy2rxhlx" path="res://script/board.gd" id="1_bw3vb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_id3w2"]
+size = Vector2(117, 121)
+
+[node name="CellGrid" type="StaticBody2D" groups=["Dropable"]]
+script = ExtResource("1_bw3vb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 3)
+shape = SubResource("RectangleShape2D_id3w2")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0

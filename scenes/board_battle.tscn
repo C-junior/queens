@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8rkiirn2fny0"]
+
+[ext_resource type="PackedScene" uid="uid://c5nlwee5o6x00" path="res://scenes/cellgrid.tscn" id="1_txdwo"]
+[ext_resource type="PackedScene" uid="uid://bwlkhphaedwsi" path="res://scenes/item.tscn" id="2_gfxik"]
+
+[node name="BoardBattle" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_right = 1154.0
+offset_bottom = 645.0
+color = Color(0.18359, 0.18359, 0.18359, 1)
+
+[node name="CellGrid" parent="." instance=ExtResource("1_txdwo")]
+position = Vector2(120, 286)
+
+[node name="CellGrid2" parent="." instance=ExtResource("1_txdwo")]
+position = Vector2(122, 141)
+
+[node name="CellGrid3" parent="." instance=ExtResource("1_txdwo")]
+position = Vector2(120, 432)
+
+[node name="CellGrid4" parent="." instance=ExtResource("1_txdwo")]
+position = Vector2(271, 289)
+
+[node name="CellGrid5" parent="." instance=ExtResource("1_txdwo")]
+position = Vector2(273, 144)
+
+[node name="CellGrid6" parent="." instance=ExtResource("1_txdwo")]
+position = Vector2(271, 435)
+
+[node name="CellGrid7" parent="." instance=ExtResource("1_txdwo")]
+position = Vector2(414, 287)
+
+[node name="CellGrid8" parent="." instance=ExtResource("1_txdwo")]
+position = Vector2(416, 142)
+
+[node name="CellGrid9" parent="." instance=ExtResource("1_txdwo")]
+position = Vector2(414, 433)
+
+[node name="Item" parent="." instance=ExtResource("2_gfxik")]
+position = Vector2(988, 835)
+
+[node name="Item2" parent="." instance=ExtResource("2_gfxik")]
+position = Vector2(687, 842)
+
+[node name="Item3" parent="." instance=ExtResource("2_gfxik")]
+position = Vector2(1310, 836)
